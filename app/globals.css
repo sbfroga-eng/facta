@@ -309,3 +309,8 @@ footer{background:var(--ink);color:#fff;padding:64px 0 34px}
   .steps,.metrics,.foot-grid{grid-template-columns:1fr}
   .metrics{gap:30px}
 }
+
+/* 통합 운영 채널 로고 */
+.t-logo{height:22px;width:auto;max-width:130px;opacity:.6;filter:saturate(0);transition:opacity .3s;vertical-align:middle}
+.t-logo:hover{opacity:.95}
+@media(max-width:680px){.t-logo{height:18px}}
