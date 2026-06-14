@@ -28,8 +28,9 @@ export const metadata: Metadata = {
     description: site.description,
     url: site.url,
     locale: "ko_KR",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "FACTA — SEO·GEO·AEO·퍼포먼스·바이럴 마케팅" }],
   },
-  twitter: { card: "summary_large_image", title: site.name, description: site.description },
+  twitter: { card: "summary_large_image", title: site.name, description: site.description, images: ["/og.png"] },
   robots: {
     index: true,
     follow: true,
