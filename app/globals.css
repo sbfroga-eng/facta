@@ -328,3 +328,8 @@ footer{background:var(--ink);color:#fff;padding:64px 0 34px}
 .metrics-wrap.play .metrics-arrow{animation:metricsFly .72s cubic-bezier(.34,.05,.5,1) both}
 @keyframes metricsFly{0%{transform:translate(-130%,-50%);opacity:1}78%{opacity:1}100%{transform:translate(165%,-50%);opacity:0}}
 @media(max-width:980px){.metrics-arrow{display:none}}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.hero h1{min-height:3.3em}
+.type-cursor{color:var(--accent);font-weight:800;margin-left:3px;animation:typeBlink 1.05s steps(1) infinite}
+@keyframes typeBlink{50%{opacity:0}}

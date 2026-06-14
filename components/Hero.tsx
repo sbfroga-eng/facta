@@ -1,4 +1,5 @@
 import Diagnosis from "./Diagnosis";
+import TypedHeadline from "./TypedHeadline";
 
 export default function Hero() {
   return (
@@ -6,7 +7,7 @@ export default function Hero() {
       <div className="wrap hero-grid">
         <div className="hero-copy">
           <span className="eyebrow">SEO · GEO · LSM · PERFORMANCE</span>
-          <h1>검색의 모든 접점에서,<br /><span className="grad">데이터와 타이밍</span>으로<br />성장을 설계합니다</h1>
+          <TypedHeadline />
           <p className="lead">FACTA는 검색엔진을 넘어 AI 검색·지도·광고까지, 고객이 브랜드를 발견하는 모든 순간을 데이터(Fact)와 타이밍(Timing)으로 연결하는 디지털 마케팅 컴퍼니입니다.</p>
           <div className="hero-cta">
             <a href="#contact" className="btn btn-primary btn-arrow">무료 마케팅 진단</a>
