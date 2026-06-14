@@ -66,6 +66,10 @@ export default function ResultsMetrics() {
             <path d="M 972 28 L 876 4 L 900 21 L 16 26 L 10 28 L 16 30 L 900 35 L 876 52 Z" fill="#f4530f" />
             <path d="M 12 28 L 950 28" stroke="#ffe0cf" strokeWidth={2.4} strokeLinecap="round" opacity={0.9} />
           </svg>
+          <svg className="metrics-arrow-v" viewBox="0 0 56 1000" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <path d="M 28 28 L 4 124 L 21 100 L 26 984 L 28 990 L 30 984 L 35 100 L 52 124 Z" fill="#f4530f" />
+            <path d="M 28 988 L 28 50" stroke="#ffe0cf" strokeWidth={2.4} strokeLinecap="round" opacity={0.9} />
+          </svg>
           <div className="metrics">
             {data.map((d, i) => (
               <div className="metric" key={d.label}>
