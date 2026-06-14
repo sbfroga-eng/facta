@@ -5,9 +5,13 @@ export const site = {
   description:
     "FACTA는 SEO·GEO·AEO·퍼포먼스 마케팅·바이럴 마케팅을 통합하는 온라인 마케팅 전문 회사입니다. 네이버·구글·쿠팡 광고 대행과 커머스 마케팅까지, 데이터(Fact)와 타이밍(Timing)으로 검색의 모든 접점에서 성장을 설계하는 마케팅 에이전시입니다.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://facta.kr",
-  email: "hello@facta.kr",
-  phone: "02-1234-5678",
-  address: "서울특별시 강남구 테헤란로 (예시)",
+  email: "facta8508@gmail.com",
+  phone: "010-5117-8508",
+  address: "서울특별시 성동구 성수이로7길 7, 708호 (서울숲 한라시그마밸리)",
+  legalName: "(주)펙타",
+  ceo: "변준영",
+  bizNumber: "398-81-04222",
+  foundingDate: "2026-05-06",
   keywords: [
     "마케팅회사", "온라인마케팅", "커머스마케팅", "SEO", "GEO", "AEO",
     "SEO전문회사", "GEO전문회사", "퍼포먼스마케팅", "퍼포먼스마케팅대행",
