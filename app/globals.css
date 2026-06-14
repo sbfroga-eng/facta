@@ -314,3 +314,12 @@ footer{background:var(--ink);color:#fff;padding:64px 0 34px}
 .t-logo{height:22px;width:auto;max-width:130px;opacity:.6;filter:saturate(0);transition:opacity .3s;vertical-align:middle}
 .t-logo:hover{opacity:.95}
 @media(max-width:680px){.t-logo{height:18px}}
+
+
+/* 성과 섹션 관통 섬광 화살 */
+.metrics-wrap{position:relative}
+.metrics-wrap .metrics{position:relative;z-index:2}
+.metrics-arrow{position:absolute;top:37px;left:0;width:100%;height:auto;z-index:1;pointer-events:none;overflow:visible;transform:translate(-130%,-50%);filter:drop-shadow(0 0 5px rgba(233,71,10,.95)) drop-shadow(0 0 13px rgba(233,71,10,.6)) drop-shadow(0 0 26px rgba(233,71,10,.35))}
+.metrics-wrap.play .metrics-arrow{animation:metricsFly .72s cubic-bezier(.34,.05,.5,1) both}
+@keyframes metricsFly{0%{transform:translate(-130%,-50%)}100%{transform:translate(142%,-50%)}}
+@media(max-width:980px){.metrics-arrow{display:none}}

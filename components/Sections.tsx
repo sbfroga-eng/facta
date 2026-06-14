@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import ResultsMetrics from "./ResultsMetrics";
 
 export function Trust() {
   const channels: { name: string; slug?: string }[] = [
@@ -100,16 +101,8 @@ export function Process() {
   );
 }
 
-const metrics = [["320%", "평균 자연 유입 증가"], ["680%", "퍼포먼스 광고 ROAS"], ["5x", "AI 검색 인용 증가"], ["98%", "파트너 재계약률"]];
 export function Metrics() {
-  return (
-    <section className="block metrics-band" id="results"><div className="wrap">
-      <Reveal className="sec-head center"><span className="eyebrow">Results</span><h2>숫자로 증명하는 성장</h2><p>FACTA와 함께한 브랜드들이 만들어낸 실제 성과 지표입니다.</p></Reveal>
-      <div className="metrics">
-        {metrics.map(([v, l], i) => <Reveal key={l} delay={(i % 4) * 60}><div className="metric"><div className="v">{v}</div><div className="l">{l}</div></div></Reveal>)}
-      </div>
-    </div></section>
-  );
+  return <ResultsMetrics />;
 }
 
 const why = [
