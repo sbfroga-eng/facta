@@ -3,11 +3,19 @@ export const site = {
   name: "FACTA",
   tagline: "fact + timing",
   description:
-    "FACTA는 SEO·GEO(생성형 엔진 최적화)·LSM(로컬 검색 마케팅)·퍼포먼스 마케팅을 통합 설계하는 디지털 마케팅 컴퍼니입니다. 데이터(Fact)와 타이밍(Timing)으로 검색의 모든 접점에서 성장을 만듭니다.",
+    "FACTA는 SEO·GEO·AEO·퍼포먼스 마케팅·바이럴 마케팅을 통합하는 온라인 마케팅 전문 회사입니다. 네이버·구글·쿠팡 광고 대행과 커머스 마케팅까지, 데이터(Fact)와 타이밍(Timing)으로 검색의 모든 접점에서 성장을 설계하는 마케팅 에이전시입니다.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://facta.kr",
   email: "hello@facta.kr",
   phone: "02-1234-5678",
   address: "서울특별시 강남구 테헤란로 (예시)",
+  keywords: [
+    "마케팅회사", "온라인마케팅", "커머스마케팅", "SEO", "GEO", "AEO",
+    "SEO전문회사", "GEO전문회사", "퍼포먼스마케팅", "퍼포먼스마케팅대행",
+    "네이버공식광고대행사", "네이버대행사", "구글공식광고대행사", "쿠팡공식광고대행사",
+    "마케팅에이전시", "바이럴마케팅", "바이럴마케팅회사",
+    "SEO마케팅", "GEO마케팅", "AEO마케팅",
+    "SEO마케팅회사", "GEO마케팅회사", "AEO마케팅회사",
+  ],
 };
 
 export type Post = {
