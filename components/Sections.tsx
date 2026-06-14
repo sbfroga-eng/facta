@@ -1,11 +1,23 @@
 import Reveal from "./Reveal";
 
 export function Trust() {
-  const items = ["NAVER", "Google", "ChatGPT", "Gemini", "Meta", "Kakao", "YouTube"];
+  const channels: { name: string; slug?: string }[] = [
+    { name: "NAVER", slug: "naver" }, { name: "Google", slug: "google" }, { name: "ChatGPT", slug: "openai" },
+    { name: "Claude", slug: "claude" }, { name: "Gemini", slug: "gemini" }, { name: "Perplexity", slug: "perplexity" },
+    { name: "Meta", slug: "meta" }, { name: "Kakao", slug: "kakao" }, { name: "YouTube", slug: "youtube" },
+    { name: "AliExpress", slug: "aliexpress" },
+    { name: "쿠팡" }, { name: "무신사" }, { name: "토스" }, { name: "SSG" }, { name: "테무" }, { name: "리멤버" },
+  ];
   return (
     <div className="trust"><div className="wrap">
       <span className="t-label">통합 운영 채널</span>
-      {items.map((i) => <span className="t-item" key={i}>{i}</span>)}
+      {channels.map((c) =>
+        c.slug ? (
+          <img key={c.name} className="t-logo" src={`/logos/${c.slug}.svg`} alt={c.name} title={c.name} />
+        ) : (
+          <span key={c.name} className="t-item">{c.name}</span>
+        )
+      )}
     </div></div>
   );
 }

@@ -140,7 +140,7 @@ header.scrolled .hamburger span{background:var(--ink)}
 .trust{border-bottom:1px solid var(--line);background:var(--bg)}
 .trust .wrap{display:flex;align-items:center;gap:26px;padding:24px 24px;flex-wrap:wrap;justify-content:center}
 .trust .t-label{font-size:13px;font-weight:700;color:var(--txt-400)}
-.trust .t-item{font-size:17px;font-weight:800;color:var(--txt-900);letter-spacing:-.02em;opacity:.42}
+.trust .t-item{font-size:16px;font-weight:800;color:#9aa0a6;letter-spacing:-.02em;opacity:.8}
 
 section.block{padding:100px 0}
 .sec-head{max-width:680px;margin-bottom:54px}
