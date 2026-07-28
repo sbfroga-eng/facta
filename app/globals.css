@@ -336,3 +336,18 @@ footer{background:var(--ink);color:#fff;padding:64px 0 34px}
 .hero h1{min-height:3.3em}
 .type-cursor{color:var(--accent);font-weight:800;margin-left:3px;animation:typeBlink 1.05s steps(1) infinite}
 @keyframes typeBlink{50%{opacity:0}}
+
+/* ===== 404 Not Found ===== */
+.nf{min-height:72vh;display:flex;align-items:center;text-align:center;padding:160px 0 90px}
+.nf .wrap{width:100%}
+.nf-code{display:inline-block;font-size:clamp(64px,11vw,132px);font-weight:900;letter-spacing:-.05em;line-height:1;
+  background:linear-gradient(120deg,#ff9a3a,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.nf h1{font-size:clamp(24px,3.4vw,38px);font-weight:800;letter-spacing:-.03em;margin-top:14px}
+.nf p{font-size:16px;color:var(--txt-600);margin-top:14px;line-height:1.7}
+.nf-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+.btn-outline{background:transparent;color:var(--txt-900);border:1px solid var(--line)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.nf-links{display:flex;gap:8px 26px;justify-content:center;flex-wrap:wrap;margin-top:44px;padding-top:26px;border-top:1px solid var(--line)}
+.nf-links a{font-size:14px;color:var(--txt-600);transition:.2s}
+.nf-links a:hover{color:var(--accent)}
+@media(max-width:640px){.nf{padding:130px 0 70px}.nf-links{gap:8px 18px}}

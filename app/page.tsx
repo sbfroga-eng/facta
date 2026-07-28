@@ -3,6 +3,7 @@ import { Trust, Services, Concept, Process, Metrics, Why, Cta } from "@/componen
 import InsightsPreview from "@/components/InsightsPreview";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { orgLd } from "@/lib/schema";
 
 const faqLd = {
   "@context": "https://schema.org",
@@ -19,6 +20,7 @@ const faqLd = {
 export default function Home() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <Hero />
       <Trust />

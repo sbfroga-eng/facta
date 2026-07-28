@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Reveal from "@/components/Reveal";
 import { getPosts } from "@/lib/sanity";
+import { breadcrumbLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "인사이트",
@@ -13,6 +14,7 @@ export default async function InsightsPage() {
   const posts = await getPosts();
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd([{ name: "펙타", url: "/" }, { name: "마케팅 인사이트", url: "/insights" }])) }} />
       <div className="page-head"><div className="wrap"><h1>인사이트</h1><p>AEO 시대의 검색·AI·퍼포먼스 마케팅을 데이터로 해석합니다.</p></div></div>
       <section className="block"><div className="wrap">
         <div className="insights-grid">

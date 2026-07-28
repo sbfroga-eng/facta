@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import { getPost, getPosts } from "@/lib/sanity";
 import { site } from "@/lib/content";
+import { breadcrumbLd } from "@/lib/schema";
 
 export async function generateStaticParams() {
   const posts = await getPosts();
@@ -34,6 +35,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd([{ name: "펙타", url: "/" }, { name: "마케팅 인사이트", url: "/insights" }, { name: post.category, url: `/insights/${post.slug}` }])) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <article className="article">
         <span className="a-tag">{post.category}</span>
