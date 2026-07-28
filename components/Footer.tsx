@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="foot-grid">
         <div className="foot-brand">
           <img src="/facta-logo-white.png" alt="FACTA" />
-          <p>데이터(Fact)와 타이밍(Timing)으로 검색의 모든 접점에서 성장을 설계하는 디지털 마케팅 컴퍼니.</p>
+          <p>펙타(FACTA)는 데이터(Fact)와 타이밍(Timing)으로 검색의 모든 접점에서 성장을 설계하는 디지털 마케팅 컴퍼니입니다.</p>
         </div>
         <div className="foot-col"><h5>Services</h5><a href="/#services">SEO 최적화</a><a href="/#services">GEO 최적화</a><a href="/#services">LSM 로컬 마케팅</a><a href="/#services">퍼포먼스 마케팅</a></div>
         <div className="foot-col"><h5>Company</h5><a href="/#concept">브랜드 스토리</a><a href="/#process">진행 방식</a><a href="/insights">인사이트</a><a href="/#contact">문의하기</a></div>

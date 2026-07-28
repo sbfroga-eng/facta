@@ -9,7 +9,7 @@ const GTM_ID = "GTM-WJWMHT74";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "FACTA | SEO·GEO·AEO 마케팅 전문회사 · 퍼포먼스·바이럴 마케팅 대행",
+    default: "펙타(FACTA) | 온라인·디지털·퍼포먼스·AI 마케팅 · SEO·GEO·AEO 전문회사",
     template: `%s · ${site.name}`,
   },
   description: site.description,
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: site.name,
-    title: "FACTA | SEO·GEO·AEO·퍼포먼스·바이럴 마케팅 전문 회사",
+    title: "펙타(FACTA) | 온라인·디지털·퍼포먼스·AI 마케팅 전문 회사",
     description: site.description,
     url: site.url,
     locale: "ko_KR",
@@ -43,7 +43,7 @@ const orgLd = {
   "@type": ["Organization", "ProfessionalService"],
   name: site.name,
   legalName: site.legalName,
-  alternateName: ["팩타", "FACTA 마케팅"],
+  alternateName: ["펙타", "(주)펙타", "FACTA", "FACTA 마케팅"],
   url: site.url,
   description: site.description,
   slogan: "데이터와 타이밍으로 성장을 설계하다",
