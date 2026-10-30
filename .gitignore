@@ -1,0 +1,15 @@
+/node_modules
+/.next
+/out
+.env*.local
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+
+# 내부 문서·작업 파일 — GitHub(공개 가능)에 올리지 않음 (2026-10-30 Cowork)
+/docs/
+/legacy-static/
+*.docx
+DEPLOY-GUIDE.md
+INDEXNOW.md
+/scripts/fill-secrets.ps1

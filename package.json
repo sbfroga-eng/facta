@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "node --test tests/*.test.mjs",
+    "admin:hash": "node scripts/admin-hash.mjs",
+    "cms:seed": "node --env-file=.env.local scripts/cms-seed.mjs"
   },
   "dependencies": {
     "next": "^15.5.19",
