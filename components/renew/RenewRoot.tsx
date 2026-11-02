@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import Intro from "./Intro";
 import NavGlass from "./NavGlass";
 import FollowDie from "./FollowDie";
+import FloatDock from "./FloatDock";
 import Diagnosis from "@/components/Diagnosis";
 
 export default function RenewRoot({ children }: { children: React.ReactNode }) {
@@ -44,6 +45,7 @@ export default function RenewRoot({ children }: { children: React.ReactNode }) {
       <NavGlass />
       {children}
       <FollowDie />
+      <FloatDock />
       <Diagnosis />
     </div>
   );
